@@ -1,8 +1,10 @@
 \documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
 \usepackage{hyphenat}
+
+\usepackage[backend=biber, style=alphabetic, sorting=ynt]{biblatex}
+\usepackage{csquotes}
+\addbibresource{main.bib}
 
 \title{Diagnose und Klassifikation von Diabetes mithilfe maschinellen Lernens}
 \author{Nico Piel (9034834) \\ nico.piel@hotmail.de}
@@ -22,7 +24,10 @@
 \section{Einleitung}
 
 \subsection{Diabetes mellitus - Definition}
+Diabetes ist eine Gruppe von Stoffwechselerkrankungen, die von der sogenannten Hyperglykämie, einer krankhaft erhöhte Konzentration von Zucker im Blut, charakterisiert werden. Grund dafür sind Defekte bei der Wirkung oder Sekretion des in der Bauchspeicheldrüse produzierten Proteohormons Insulin \cite{ada}. Durch diese chronische Hyperglykämie können verschiedene Langzeitkomplikationen entstehen, unter anderem Dysfunktionen und Organversagen, vor allem der Augen, Leber, Nerven, Herz und Blutgefäße \cite{who}.
 
+\newpage
 
+\printbibliography
 
 \end{document}
