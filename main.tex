@@ -4,10 +4,11 @@
 
 \usepackage[backend=biber, style=alphabetic, sorting=ynt]{biblatex}
 \usepackage{csquotes}
+\usepackage{textgreek}
 \addbibresource{main.bib}
 
 \title{Diagnose und Klassifikation von Diabetes mithilfe maschinellen Lernens}
-\author{Nico Piel (9034834) \\ nico.piel@hotmail.de}
+\author{Nico Piel \\ 9034834 \\ nico.piel@hotmail.de}
 \date{7. Januar 2020}
 \usepackage[onehalfspacing]{setspace}
 
@@ -21,10 +22,29 @@
 
 \newpage
 
-\section{Einleitung}
+\section{Diabetes mellitus}
 
-\subsection{Diabetes mellitus - Definition}
-Diabetes ist eine Gruppe von Stoffwechselerkrankungen, die von der sogenannten Hyperglykämie, einer krankhaft erhöhte Konzentration von Zucker im Blut, charakterisiert werden. Grund dafür sind Defekte bei der Wirkung oder Sekretion des in der Bauchspeicheldrüse produzierten Proteohormons Insulin \cite{ada}. Durch diese chronische Hyperglykämie können verschiedene Langzeitkomplikationen entstehen, unter anderem Dysfunktionen und Organversagen, vor allem der Augen, Leber, Nerven, Herz und Blutgefäße \cite{who}.
+\subsection{Definition}
+
+Diabetes ist eine Gruppe von Stoffwechselerkrankungen, die von der sogenannten Hyperglykämie, einer krankhaft erhöhten Blutzuckerkonzentration, charakterisiert werden. Grund dafür sind Defekte bei der Wirkung oder Sekretion des in der Bauchspeicheldrüse produzierten Proteohormons Insulin \cite{ada}. Durch diese chronische Hyperglykämie können verschiedene Langzeitkomplikationen entstehen, unter anderem Dysfunktionen und Organversagen der Augen, Leber, Nerven, des Herzen und der Blutgefäße \cite{who}.
+Es gibt eine Reihe an Krankheitserregern; besonders nennenswert sind der absolute Insulinmangel durch autoimmune Zerstörung der \textbeta-Zellen in der Bauchspeicheldrüse und verschiedene Abnormalitäten des Stoffwechsels, die zu Insulinresistenz führen. Grund für diese Stoffwechselprobleme sind mangelhafte oder fehlende Wirkung - beziehungsweise unzureichende Aufnahme - des Insulin, oft bedingt durch unzulängliche Sekretion des Hormons. Häufig koexistieren Wirkungs- und Sekretionsprobleme im selben Patienten, sodass unklar ist, welches der beiden, wenn nicht beide, die Hyperglykämie verursachen.
+
+\subsection{Symptomatik, Direkt- und Langzeitfolgen}
+
+Symptome der Hyperglykämie sind unter anderem Polyurie, Polydipsie, Gewichtsverlust, manchmal Polyphagie und Sehbeeinträchtigungen\footnotemark \cite{ada}. Bei besonders frühen oder schweren Erkrankungen kann es auch zu Wachstumsstörungen oder Schwächungen des Immunsystems kommen. Akute, lebensgefährliche Direktfolgen eines unkontrollierten Diabetes sind Ketoazidose durch Langzeithyperglykämie und hyperosmolares Koma\footnotemark[\value{footnote}] \cite{who}.
+
+
+Selbst durch einen gut behandelten Diabetes können Langzeitkomplikationen entstehen, darunter Retinopathie und eventuelle Blindheit; Nephropathie und daraus folgendes Nierenversagen; periphere Neuropathie mit Risiko auf Fußgeschwüre, Amputationen oder Charcot-Füße; und gastrointestinale, urogenitale und kardiovaskulare Symptome und sexuelle Dysfunktion\footnotemark[\value{footnote}]. Patienten  mit Diabetes haben eine erhöhte Inzidenz für die koronare Herzkrankheit, periphere arterielle  Verschlusskrankheit und zerebrovaskuläre Krankheiten. Auch Hypertonie und Störungen des Lipoproteinstoffwechsels\footnotemark[\value{footnote}]. \cite{ada}
+
+\subsection{Klassifikation}
+
+Der Großteil von Diabetespatienten lässt sich in zwei weite ätiologische Kategorien unterteilen. 
+
+\subsubsection{Diabetes mellitus Typ 1}
+
+
+
+\footnotetext{Definition der Fachbegriffe im Anhang}
 
 \newpage
 
