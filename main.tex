@@ -2,12 +2,12 @@
 \usepackage[ngerman]{babel}
 \usepackage{hyphenat}
 
-\usepackage[backend=biber, style=alphabetic, sorting=ynt]{biblatex}
+\usepackage[backend=biber, style=nature, sorting=ynt]{biblatex}
 \usepackage{csquotes}
 \usepackage{textgreek}
 \addbibresource{main.bib}
 
-\title{Diagnose und Klassifikation von Diabetes mithilfe maschinellen Lernens}
+\title{Diagnose und Klassifikation von \textit{Diabetes mellitus} mithilfe maschinellen Lernens}
 \author{Nico Piel \\ 9034834 \\ nico.piel@hotmail.de}
 \date{7. Januar 2020}
 \usepackage[onehalfspacing]{setspace}
@@ -19,6 +19,17 @@
 \newpage
 
 \tableofcontents
+
+\newpage
+
+\begin{abstract}
+
+Ziel dieser Arbeit war es, mithilfe maschineller Lernmethoden und klinischen Daten zu überprüfen, ob man \textit{Diabetes mellitus} ohne Gensequenzierung diagnostizieren und klassifizieren kann. 
+Angelehnt an die Methodik von Halfvarson et al \cite{dyn} sollte mittels Principal Coordinate Analysis (PCoA) eine sogenannte \textit{Healthy Plane} definiert werden, anhand derer eine gesunde von einer an Diabetes mellitus erkrankten Person unterschieden werden sollte.
+% TODO: Ergebnisse präsentieren
+Interessant ist diese Arbeit vor allem für Studenten der Bioinformatik.
+
+\end{abstract}
 
 \newpage
 
@@ -34,7 +45,10 @@ Es gibt eine Reihe an Krankheitserregern; besonders nennenswert sind der absolut
 Symptome der Hyperglykämie sind unter anderem Polyurie, Polydipsie, Gewichtsverlust, manchmal Polyphagie und Sehbeeinträchtigungen\footnotemark \cite{ada}. Bei besonders frühen oder schweren Erkrankungen kann es auch zu Wachstumsstörungen oder Schwächungen des Immunsystems kommen. Akute, lebensgefährliche Direktfolgen eines unkontrollierten Diabetes sind Ketoazidose durch Langzeithyperglykämie und hyperosmolares Koma\footnotemark[\value{footnote}] \cite{who}.
 
 
-Selbst durch einen gut behandelten Diabetes können Langzeitkomplikationen entstehen, darunter Retinopathie und eventuelle Blindheit; Nephropathie und daraus folgendes Nierenversagen; periphere Neuropathie mit Risiko auf Fußgeschwüre, Amputationen oder Charcot-Füße; und gastrointestinale, urogenitale und kardiovaskulare Symptome und sexuelle Dysfunktion\footnotemark[\value{footnote}]. Patienten  mit Diabetes haben eine erhöhte Inzidenz für die koronare Herzkrankheit, periphere arterielle  Verschlusskrankheit und zerebrovaskuläre Krankheiten. Auch Hypertonie und Störungen des Lipoproteinstoffwechsels\footnotemark[\value{footnote}]. \cite{ada}
+Selbst durch einen gut behandelten Diabetes können Langzeitkomplikationen entstehen, darunter Retinopathie und eventuelle Blindheit; Nephropathie und daraus folgendes Nierenversagen; periphere Neuropathie mit Risiko auf Fußgeschwüre, Amputationen oder Charcot-Füße; und gastrointestinale, urogenitale und kardiovaskulare Symptome und sexuelle Dysfunktion\footnotemark[\value{footnote}]. Patienten  mit Diabetes haben eine erhöhte Inzidenz für die koronare Herzkrankheit, periphere arterielle  Verschlusskrankheit und zerebrovaskuläre Krankheiten. Auch Hypertonie und Störungen des Lipoproteinstoffwechsels kommen bei Patienten mit Diabetes häufig vor.\footnotemark[\value{footnote}]. \cite{ada}
+
+\footnotetext{Definition der Fachbegriffe im Anhang}
+\newpage
 
 \subsection{Klassifikation}
 
@@ -42,9 +56,17 @@ Der Großteil von Diabetespatienten lässt sich in zwei weite ätiologische Kate
 
 \subsubsection{Diabetes mellitus Typ 1}
 
+Bei \textit{Typ 1 Diabetes} (vormals \glqq insulinabhängiger Diabetes\grqq{}) liegt die Quelle der Krankheit in einem absoluten Insulinmangel. Der Körper zerstört die \textbeta-Zellen in den Langerhans-Inseln der Bauchspeicheldrüse durch eine zelluläre Immunantwort der cytotoxischen T-Zellen \cite{ada}. Diese Form der Krankheit betrifft etwa 5-10\% der Patienten. 
+
+\subsubsection{Diabetes mellitus Typ 2}
+
+\textit{Typ 2 Diabetes} (vormals auch nicht-insulinabhängiger Diabetes genannt) betrifft etwa 90-95\% der Erkrankten. Die Betroffenen entwickeln eine Insulinresistenz und häufig auch relativen (statt absoluten) Insulinmangel \cite{ada}. Diese Patienten benötigen häufig zu Beginn und auch während ihres Lebens \textbf{keine} Insulintherapie. 
 
 
-\footnotetext{Definition der Fachbegriffe im Anhang}
+\newpage
+
+\appendix
+\chapter{Anhang}
 
 \newpage
 
