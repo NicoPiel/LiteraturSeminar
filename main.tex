@@ -32,7 +32,7 @@
 }
 \usepackage{upquote} % Upright quotes for verbatim code
 \usepackage{eurosym} % defines \euro
-\usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+%\usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
 \usepackage{fancyvrb} % verbatim replacement that allows latex
 \usepackage{grffile} % extends the file name processing of package graphics 
                      % to support a larger range
@@ -442,9 +442,11 @@ Die für diese Arbeit wichtigsten Voraussetzungen sind die Kriterien zur Diagnos
 \section{Anhang}
 
 
+\subsection{Jupyter Notebook}
+
     
-    \hypertarget{diagnose-und-klassifikation-von-diabetes-mellitus-mithilfe-maschinellen-lernens}{%
-\subsection{Script}\label{diagnose-und-klassifikation-von-diabetes-mellitus-mithilfe-maschinellen-lernens}}
+\hypertarget{diagnose-und-klassifikation-von-diabetes-mellitus-mithilfe-maschinellen-lernens}{%
+\subsubsection{Setup}\label{diagnose-und-klassifikation-von-diabetes-mellitus-mithilfe-maschinellen-lernens}}
 
 Hier finden Sie den gesamten Code, den der Autor für die Analyse
 verwendet hat.
@@ -509,7 +511,7 @@ GPUs für die Berechnung: 0
 \end{tcolorbox}
 
     \hypertarget{vorbereitung}{%
-\subsection{Vorbereitung}\label{vorbereitung}}
+\subsubsection{Vorbereitung}\label{vorbereitung}}
 
 Als Erstes möchten wir uns ein wenig Übersicht verschaffen, also Data
 Exploration betreiben.
@@ -670,7 +672,7 @@ scheint der 75g-2h-oGGT nur mittelmäßig mit dem Ergebnis
 zusammenzuhängen.
 
     \hypertarget{das-modell}{%
-\subsection{Das Modell}\label{das-modell}}
+\subsubsection{Das Modell}\label{das-modell}}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{8}{\boxspacing}
@@ -757,7 +759,7 @@ Best Validation Accuracy: 99.458\%
     { \hspace*{\fill} \\}
     
     \hypertarget{vorhersagen}{%
-\subsection{Vorhersagen}\label{vorhersagen}}
+\subsubsection{Vorhersagen}\label{vorhersagen}}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{11}{\boxspacing}
